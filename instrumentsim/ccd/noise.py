@@ -79,7 +79,7 @@ def add_read_noise(img:np.ndarray, rn:float):
 
     # Using the floor function because reading
     # adds or removes integer number of electrons.
-    return np.floor(np.random.normal(img, rn))
+    return np.random.normal(img, rn)
 
 def add_poisson_noise(img:np.ndarray):
     """
