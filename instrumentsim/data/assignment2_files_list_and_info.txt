@@ -1,0 +1,26 @@
+aluminum.dat Reflectance of aluminum vs. wavelength in microns
+
+Filter curves in the Johnson-Cousins system, as defined by Bessell 1990, PASP 102, 1181.  All are transmittance vs. wavelength in Angstroms.
+bessell_B.dat
+bessell_V.dat
+bessell_I.dat
+
+J-band filter. This is a Mauna Kea Observatory IR filter, see Tokunaga, Simons & Vaca 2002, PASP, 114, 180
+
+The sdss g band filter curve:  g.dat
+This is the transmission vs. wavelength in Angstroms.
+These filters intentionally describe the SDSS system specifically,
+and include the effect of the CCD QE curve. The second column in the file
+is the one you should use, sensitivity through airmass 1.3 (a zenith angle of about 40 degrees, or elevation about 50 degrees). That is how the photometric system is defined.
+You can see Doi et al. 2010, AJ, 129, 1628
+
+e2vhirhomulti.txt is the quantum efficiency (probability of photon absorption) for the E2V CCD that was the CCD model for assignment 1. That will be the CCD model for this assignment, too.   The units are percent absorption vs. wavelength in microns. The datasheet for the detector is E2V_CCD231-84.pdf
+
+
+Atmosphere absorption and transmission
+
+Optical absorption (also called extinction): optical_extinction.dat in units of percent transmission vs. wavelength in Angstroms.
+optical emission: skybg_50_10.dat   units are photons/s/nm/arcsec^2/m^2 vs. wavelength in nm
+IR sky absorption: trans_10_10.dat  units are percent transmission vs wavelength in microns
+IR sky emission: nearIR_skybg_16_15_r5.dat units are ph/sec/arcsec2/nm/m2
+
